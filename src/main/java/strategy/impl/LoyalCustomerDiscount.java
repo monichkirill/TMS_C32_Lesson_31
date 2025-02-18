@@ -1,4 +1,10 @@
 package strategy.impl;
 
-public class LoyalCustomerDiscount {
+import strategy.DiscountStrategy;
+
+public class LoyalCustomerDiscount implements DiscountStrategy {
+    @Override
+    public double applyDiscount(double price) {
+        return price * 0.9;
+    }
 }
